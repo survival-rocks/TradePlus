@@ -7,19 +7,12 @@ import org.bukkit.entity.Player;
 
 public class Sounds {
 
-  public static final int version;
+  public static final int version = 130; // todo fix
   private static Sound pling;
   private static Sound click;
   private static Sound levelUp;
   private static Sound villagerHit;
   private static Sound villagerHmm;
-
-  static {
-    String[] split =
-        Bukkit.getServer().getClass().getPackage().getName().split("\\.")[3].split("_");
-    version = Integer.parseInt(split[0].replace("v", "") + split[1]);
-//    System.out.println("You appear to be running version " + version);
-  }
 
   public static void loadSounds() {
     try {
